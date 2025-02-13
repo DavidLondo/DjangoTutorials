@@ -1,0 +1,22 @@
+{% extends 'pages/base.html' %}
+
+{% block title %} {{ title }} {% endblock %}
+
+{% block header_title %} {{ subtitle }} {% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h2>Contact Information</h2>
+            <p class="lead"><strong>{{ description }}</strong></p>
+            <ul class="list-unstyled">
+                <li><strong>Author:</strong> {{ author }}</li>
+                <li><strong>Email:</strong> <a href="mailto:{{ email }}">{{ email }}</a></li>
+                <li><strong>Address:</strong> {{ address }}</li>
+                <li><strong>Phone:</strong> {{ phone }}</li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}
